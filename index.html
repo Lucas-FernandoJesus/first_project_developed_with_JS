@@ -7,7 +7,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Assets/Styles/textes.css" />
+    <link rel="stylesheet" href="./Assets/Styles/index.css" />
     <title>Library</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
       <section class="nav_sidebar">
         <div class="options">
           <div class="option_1">
-            <img src="./Assets/Images/Book.jpg" alt="Book" class="image_book" />
+            <img src="./Assets/Images/Book_2.jpg" alt="Book" class="image_book" />
             <h1 class="title">LIBRARY</h1>
             <div class="options_header">
               <ul>
@@ -43,17 +43,32 @@
       </div>
     </div>
     <main>
+      <div class="most_read">
+          <li class="icon_label"><i class='bx bxs-label'><h3>MAIS LIDOS DO DIA</h3></i></li>
+      </div>
       <section class="main_information">
-        <div class="most_read">
-            <li class="icon_label"><i class='bx bxs-label'><h3>MAIS LIDOS DO DIA</h3></i></li>
-        </div>
         <!-- Carrosel de imagens -->
+         <div class="carrousel">
+          <div class="container_carrousel" id="img_carrousel">
+            <img src="./Assets/Images/1.png" alt="">
+            <p>TESTE</p>
+            <img src="./Assets/Images/2.jpeg" alt="">
+            <img src="./Assets/Images/3.jpg" alt="">
+            <img src="./Assets/Images/4.png" alt="">
+            <img src="./Assets/Images/5.jpg" alt="">
+            <img src="./Assets/Images/6.jpg" alt="">
+            <img src="./Assets/Images/8.jpg" alt="">
+          </div>
+          <button class="prev" onclick="prevCarrousel()">Anterior</button>
+          <button class="next" onclick="nextCarrousel()">Próximo</button>
+         </div>
       </section>
     </main>
     <footer>
       <section class="footer_information"></section>
     </footer>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    <script src="./Assets/JS/index.js" defer></script>
   </body>
 </html>
